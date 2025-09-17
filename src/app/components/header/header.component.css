@@ -1,0 +1,39 @@
+.encabezado{
+    height: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    background-color: rgb(255, 188, 243);
+}
+.nombre_licenciado{
+    flex-grow: 1;
+    display: flex;
+}
+.h1_nombre{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: white;
+}
+.iconos{
+    display: flex;
+    margin-right: 10px; 
+}
+.link_whatsapp,.link_instagram{
+    font-family: sans-serif;
+    padding-left: 25px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.link_instagram:hover, 
+.link_whatsapp:hover,
+.h1_nombre:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}

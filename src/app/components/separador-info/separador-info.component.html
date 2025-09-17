@@ -1,0 +1,30 @@
+<section class="main">  
+    <section class="separador_info">
+
+        <img src="\icono-agenda.png" alt="icono-turno" width="40px" height="40px">
+
+        <button class="separador_button" (click)="selectSection('turnos')">AGENDAR TURNOS</button>
+
+        <img class="compra_icon" src="\icono_compra.png" alt="icono-compra" width="40px" height="40px">
+
+        <button class="separador_button" (click)="selectSection('productos')">COMPRAR PRODUCTOS</button>
+
+        <img src="\icono_recetas.png" alt="icono-recetas" width="40px" height="40px">
+
+        <button class="separador_button" 
+            [class.active]="activeSection === 'posts'" 
+            (click)="selectSection('posts')" >
+            VER ALGUNAS RECETAS
+        </button>
+
+        <img src="\icono-memoriajuego.png" alt="icono-juegos" width="40px" height="40px" >
+
+        <button class="separador_button" id="cursor-juegos"
+            [class.active]="activeSection === 'juegos'" 
+            (click)="selectSection('juegos')">
+            LA DIVERSIÓN ES SALUD
+        </button>
+        
+
+    </section>
+</section>

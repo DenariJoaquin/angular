@@ -1,0 +1,130 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+}
+.posts{
+    height: 100%;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#posts_box_titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.posts_titulo{
+    margin-bottom: 25px;
+    margin-top: 55px;
+    display: flex;
+    font-size:49px;
+}
+
+.posts_img{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.posts_img_config {
+    position: relative;
+    display: inline-block;
+    width: 301px;
+    height: auto;
+    transition: all 0.3s  ease;
+    overflow: hidden;
+}
+
+.posts_img_config img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.posts_img_config:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+}
+
+.imagen_texto_hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 17%;
+    width: 100%;
+    background: rgb(255, 188, 243);
+    color: black;
+    padding: 15px;
+    text-align: center;
+    transform: translateY(90%);
+    transition: 0.2s ease;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.posts_img_config:hover .imagen_texto_hover {
+    transform: translateY(0);
+    font-size: 15px;
+}
+
+.separador_recetas{
+    background-color:rgb(255, 188, 243) ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 7px;
+    padding-right: 8%;
+    padding-left: 5%;
+    display:flex;
+    font-size: 15px;
+    gap: 20px;
+    color: black;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button_recetas{
+    align-items: center;
+    width:100%;
+    padding: 5px;
+    height: 30px;
+    border-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    animation: color-change  2s linear 0s infinite alternate both;
+}
+@keyframes color-change {
+    0% { background: rgb(255, 122, 231); } 
+    33.3333% { background: rgb(248, 219, 165); } 
+    66.666% { background: rgb(249, 172, 235); } 
+    100% { background: rgba(255, 196, 86, 0.824);} 
+}
+
+.link_button_recetas{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width:120px;
+    text-decoration: none;
+}
+
+.button_recetas:hover{
+    cursor: pointer;
+}
+
+.separador_posts{
+    background-color: rgb(255, 188, 243);
+    margin-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}

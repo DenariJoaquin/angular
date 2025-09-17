@@ -1,0 +1,31 @@
+<section class="seccion_change">
+    <section class="seccion-activa" id="seccion-juegos">
+        <div class="header_games">
+            <h1 class="h1_header_games"> <span style="color: red;">></span>  J U E G O S <span style="color: red;"></span> </h1>
+        </div>
+        <div class="body_games">
+            <h1 class="h1_body_games">EJERCITA TU MEMORIA</h1>
+            <button (click)="iniciarJuego()" *ngIf="!juegoIniciado" class="boton">Iniciar Juego</button>
+            <button (click)="reiniciarJuego()" class="boton" *ngIf="juegoIniciado && !juegoGanado">Reiniciar Juego</button>
+            
+            <div *ngIf="cargando" class="cargando">Cargando imágenes...</div>
+            
+            <div class="tablero" *ngIf="juegoIniciado && !cargando">
+                <div *ngFor="let carta of cartas; let i = index" 
+                    class="carta" 
+                    [class.volteada]="carta.volteada"
+                    [class.encontrada]="carta.encontrada"
+                    (click)="voltearCarta(carta)">
+                    <div class="frente" [style.backgroundImage]="'url(' + carta.UrlImagen + ')'"></div>
+                    <div class="reves"></div>
+                </div>
+            </div>
+        
+            <div  class="mensaje-ganador" *ngIf="juegoGanado" >
+                <h2>¡TENÉS BUENA MEMORIA! 🧩</h2>
+                <button (click)="reiniciarJuego()" class="boton">Jugar de Nuevo / Cerrar el juego</button>
+            </div>
+        </div>
+    </section>
+</section>
+<app-footer></app-footer>

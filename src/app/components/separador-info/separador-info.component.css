@@ -1,0 +1,41 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+}
+
+.separador_info{
+    display: flex; 
+    margin-top: 30px;
+    padding: 15px;
+    gap: 20px;
+    width: 100%;
+    background-color: rgb(255, 188, 243);
+    justify-content: center;
+}
+.separador_button{
+    padding: 8px;
+    border-radius:  5%;
+    border-color: wheat;
+    border-style: solid ;
+    background-color: white;
+    font-size: 15px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.separador_button:hover{
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.separador_button.active{
+    transition: all 0.5s;
+    background-color: #ff5e9a;
+    color: white;
+    border-color: #ff5e9a;
+}
+
+
+    

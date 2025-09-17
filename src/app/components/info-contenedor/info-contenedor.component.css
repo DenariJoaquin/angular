@@ -1,0 +1,51 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 40%;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing:content-box;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+
+}
+.info_titulo{
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+.info_h2{
+    font-size: 22px;
+}
+.info_parrafo{
+    font-size: 17px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.info_icono{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.info_contenedor{
+    position: relative;
+    display: flex;
+    width: 100%;
+} 
